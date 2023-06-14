@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#board {
+    border: 1px solid #000;
+    margin: 50px auto 30px;
+    width: 450px;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+#button {
+    margin: 30px auto;
+    width: 450px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    color: #FFF;
+    background-color: #0000FF;
+    width: 145px;
+}
+
+.btn:hover {
+    background-color: rgb(25, 25, 222);
+}
+
+.cell.x {
+    background: url('img/croix.png') no-repeat center;
+}
+
+.cell.o {
+    background: url('img/cercle.png') no-repeat center;
+}
+
+#playerNames {
+    font-size: 20px;
+    margin: 0 auto;
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 451px) {
+    #board {
+        width: 375px;
+    }
+    #button {
+        width: 375px;
+    }
+    .cell {
+        width: 125px;
+        height: 125px;
+    }
+    #playerNames {
+        width: 375px;
+        font-size: 1.15rem;
+    }
+    .cell.x {
+        background: url('img/croix_resp.png') no-repeat center;
+    }
+    
+    .cell.o {
+        background: url('img/cercle_resp.png') no-repeat center;
+    }    
+}
