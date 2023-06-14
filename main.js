@@ -91,7 +91,7 @@ function updateGameState() {
     if (roundDraw) {
         gameActive = false;
         setTimeout(function () {
-            alert("Égalité!");
+            alert("Égalité !");
         }, 100);
         return;
     }
