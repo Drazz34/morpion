@@ -27,7 +27,7 @@ document.getElementById('play').addEventListener('click', function () {
     }
 
     while (player1 == player2) {
-        player2 = prompt("Prénom déjà pris, veuillez en choisir un autre : ")
+        player2 = prompt("Prénom déjà pris, veuillez en choisir un autre : ");
     }
 
     players[0] = player1;
