@@ -46,12 +46,23 @@ h2 {
     cursor: pointer;
     border-radius: 30px;
     color: #FFF;
-    background-color: #0000FF;
     width: 160px;
 }
 
-.btn:hover {
+#play {
+    background-color: #0000FF;
+}
+
+#play:hover {
     background-color: rgb(25, 25, 222);
+}
+
+#reset {
+    background-color: #FF0000;
+}
+
+#reset:hover {
+    background-color: #CC0000;
 }
 
 .cell.x {
